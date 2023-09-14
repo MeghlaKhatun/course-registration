@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/xSNtpcz/Rectangle-2.png",
+      "course_name": "Introduction to C Programming",
+      "credit": 1,
+      "price": 15000,
+      "details": "C is an imperative procedural language, supporting structured programming, lexical variable scope and recursion, with a static type system. It was designed to be compiled to provide low-level access to memory .",
+      "book_img":"https://i.ibb.co/n30hFsC/Frame.png"
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/LCxXmc0/Rectangle-2-1.png",
+      "course_name": "Introduction to Algorithms",
+      "credit": 2,
+      "price": 25000,
+      "details": "An algorithm is a procedure used for solving a problem or performing a computation. Algorithms act as an exact list of instructions. that conduct specified actions step by step in either hardware- or software-based routines. ",
+      "book_img":"https://i.ibb.co/n30hFsC/Frame.png"
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/FYCWV3V/Rectangle-2-2.png",
+      "course_name": "Introduction to C++ for DSA",
+      "credit": 10,
+      "price": 10000,
+      "details": "Key concepts of C++ DSA include Arrays, Linked Lists, Stacks, Queues, Trees, and Graphs. Common Algorithms in C++ DSA include Sorting, Searching, Graph, and Dynamic Programming Algorithms. ",
+      "book_img":"https://i.ibb.co/n30hFsC/Frame.png"
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/5TPZs08/Rectangle-3.png",
+      "course_name": "Basic Data Structures",
+      "credit": 5,
+      "price": 35000,
+      "details": " Data structure is a method to store and organize data so it can be easily used to perform operations to get desired results. Arrays, linked lists, stacks, queues, hash tables, trees, heaps, and graphs are the basic data structures.",
+      "book_img":"https://i.ibb.co/n30hFsC/Frame.png"
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/ZzL21X7/Rectangle-2-3.png",
+      "course_name": "Introduction to OOP Python",
+      "credit": 5,
+      "price": 19000,
+      "details": "In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc. ",
+      "book_img":"https://i.ibb.co/n30hFsC/Frame.png"
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/VDjnnSV/Rectangle-2-4.png",
+      "course_name": "Software Engineering",
+      "credit": 2,
+      "price": 23000,
+      "details": "Software engineering is the branch of computer science that deals with the design, development, testing, and maintenance of software applications. Software engineers apply engineering principles. ",
+      "book_img":"https://i.ibb.co/n30hFsC/Frame.png"
+    },
+    {
+      "id": 7,
+      "img": "https://i.ibb.co/ctthNN7/Rectangle-3-1.png",
+      "course_name": "AWS, Cloud Computing",
+      "credit": 5,
+      "price": 35000,
+      "details": "AWS has significantly more services, and more features within those services, than any other cloud provider–from infrastructure technologies like compute, storage, and databases–to emerging technologies, such as machine learning and artificial intelligence.",
+      "book_img":"https://i.ibb.co/n30hFsC/Frame.png"
+    },
+    {
+      "id": 8,
+      "img": "https://i.ibb.co/4JkdQbS/Rectangle-2-5.png",
+      "course_name": "Database (MySQL)",
+      "credit": 5,
+      "price": 19000,
+      "details": "MySQL Database is a client/server system that consists of a multithreaded SQL server that supports different back ends, several different client programs and libraries, administrative tools, and a wide range of application-programming interfaces (APIs).",
+      "book_img":"https://i.ibb.co/n30hFsC/Frame.png"
+    },
+    {
+      "id": 9,
+      "img": "https://i.ibb.co/q5fMzJg/Rectangle-2-6.png",
+      "course_name": "Problem-Solving Part",
+      "credit": 2,
+      "price": 23000,
+      "details": "Problem solving is the process of defining a problem, identifying its root cause, prioritizing and selecting potential solutions, and implementing the chosen solution. There's no one-size-fits-all problem-solving process in the language.",
+      "book_img":"https://i.ibb.co/n30hFsC/Frame.png"
+    }
+  ]
