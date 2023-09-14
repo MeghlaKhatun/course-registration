@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 
-const Blog = ({card}) => {
-    const {details,course_name,price,credit,img,book_img}=card;
+const Blog = ({card,handleCourseName}) => {
+    const {id,details,course_name,price,credit,img,book_img}=card;
     return (
             <div>
-            <div className='p-4 rounded-lg drop-shadow-2xl border-gray-600 bg-white justify-center items-center'>
+            <div className='p-4 rounded-lg drop-shadow-2xl bg-white justify-center items-center'>
             <img className='w-full' src={img} />
             <div>
                 <h1 className='text-[18px] font-semibold my-4'>{course_name}</h1>
@@ -17,7 +17,7 @@ const Blog = ({card}) => {
                 </div>
 
                 <div>
-                <button className='bg-[#2F80ED] text-white text-center w-full py-[9px] text-[18px] font-semibold rounded-[8px]'>Select</button>
+                <button onClick={()=>handleCourseName(id)} className='bg-[#2F80ED] text-white text-center w-full py-[9px] text-[18px] font-semibold rounded-[8px]'>Select</button>
                 </div>
 
             </div>
@@ -31,5 +31,6 @@ const Blog = ({card}) => {
 
 Blog.propTypes={
     card:PropTypes.object,
+    handleCourseName:PropTypes.func
 }
 export default Blog;
