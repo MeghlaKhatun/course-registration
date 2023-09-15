@@ -23,8 +23,6 @@ const Blogs = () => {
 
     const handleCourseName =(course)=>{
 
-
-        console.log(course)
         const isAdd=courseName.find(item=>item.id == course.id);
         let count=course.credit;
     
@@ -49,20 +47,16 @@ const Blogs = () => {
 
                 setCourseName([...courseName,course])
 
-            }
-                   
-           
-        }
-
-        
+            }      
+        }     
         }
    
     
 
     return (
-        <div className="flex flex-col lg:flex-row mb-16 gap-6">
+        <div className="flex flex-col lg:flex-row mb-16 gap-6 px-8  lg:px-0">
 
-        <div  className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 w-3/4  '>
+        <div  className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 w-full lg:w-3/4 '>
             {
                 cards.map((card,idx)=><Blog key={idx} card={card} handleCourseName={handleCourseName} ></Blog>)
             }

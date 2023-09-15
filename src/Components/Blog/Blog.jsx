@@ -9,8 +9,8 @@ const Blog = ({card,handleCourseName}) => {
             <div>
                 <h1 className='text-[18px] font-semibold my-4'>{course_name}</h1>
                 <p className='text-[14px] font-normal'>{details}</p>
-                <div className='flex justify-between mt-[19px] mb-6'>
-                    <h1 className='text-xl'>$</h1>
+                <div className='flex justify-between items-center mt-[19px] mb-6'>
+                    <h1 className='text-[22px]'>$</h1>
                     <p className='text-[16px] font-medium'>Price : {price}</p>
                     <img src={book_img} alt="" />
                     <p className='text-[16px] font-medium'>Credit: {credit}hr</p>
