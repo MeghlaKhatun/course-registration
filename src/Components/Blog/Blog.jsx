@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-const Blog = ({card,handleCourseName}) => {
-    const {id,details,course_name,price,credit,img,book_img}=card;
+const Blog = ({card,handleCourseName}) => { 
+    const {details,course_name,price,credit,img,book_img}=card;
     return (
             <div>
             <div className='p-4 rounded-lg drop-shadow-2xl bg-white justify-center items-center'>
@@ -17,7 +17,7 @@ const Blog = ({card,handleCourseName}) => {
                 </div>
 
                 <div>
-                <button onClick={()=>handleCourseName(id)} className='bg-[#2F80ED] text-white text-center w-full py-[9px] text-[18px] font-semibold rounded-[8px]'>Select</button>
+                <button onClick={()=>handleCourseName(card)} className='bg-[#2F80ED] text-white text-center w-full py-[9px] text-[18px] font-semibold rounded-[8px]'>Select</button>
                 </div>
 
             </div>

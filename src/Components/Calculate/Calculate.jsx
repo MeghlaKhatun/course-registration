@@ -1,6 +1,10 @@
 import PropTypes from 'prop-types';
+import Course from '../Course/Course';
 
-const Calculate = () => {
+const Calculate = ({names}) => {
+  
+
+    
     return (
         <div  className='p-4 rounded-lg drop-shadow-2xl bg-white'>
             
@@ -9,6 +13,12 @@ const Calculate = () => {
             <div className=' border-b-2 my-4'>
             </div>
             <h1 className='text-xl font-bold'>Course Name</h1>
+            
+                {
+                names.map((course,idx)=><Course key={idx} name={course}></Course>)
+             }
+            
+                
 
             <div className=' border-b-2 my-4'>
             </div>
@@ -19,7 +29,8 @@ const Calculate = () => {
 };
 
 Calculate.propTypes={
-    card:PropTypes.object,
+    names:PropTypes.array
+
 }
 
 export default Calculate;
