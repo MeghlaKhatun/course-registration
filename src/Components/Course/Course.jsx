@@ -5,9 +5,11 @@ const Course = ({name}) => {
    
     return (
         <div>
-            <ol>
+           
                 <li>{course_name}</li>
-            </ol>
+
+               
+           
         </div>
     );
 };

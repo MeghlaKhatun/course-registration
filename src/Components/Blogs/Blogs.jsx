@@ -8,7 +8,10 @@ import Calculate from "../Calculate/Calculate";
 const Blogs = () => {
 
     const [cards,setCards]=useState([]);
-    const [courseName,setCourseName]=useState([])
+    const [courseName,setCourseName]=useState([]);
+    const [totalSum,setTotalSum]=useState(0);
+    const [remaining,setRemaining]=useState(20);
+   
 
 
     useEffect(()=>{
@@ -19,9 +22,40 @@ const Blogs = () => {
 
 
     const handleCourseName =(course)=>{
-        const newCourse=[...courseName,course]
-        setCourseName(newCourse)
-    }
+
+
+        console.log(course)
+        const isAdd=courseName.find(item=>item.id == course.id);
+        let count=course.credit;
+    
+      
+        if(isAdd){
+           return alert ("already adding")
+        }
+        else{
+            courseName.forEach(credit=>{
+                count =count + credit.credit;
+
+            })
+
+            const totalRemaining=20-count;
+            if(count >20){
+                return alert("Dont show")
+            }else{
+
+                setTotalSum(count);
+            
+                setRemaining(totalRemaining)
+
+                setCourseName([...courseName,course])
+
+            }
+                   
+           
+        }
+
+        
+        }
    
     
 
@@ -35,7 +69,9 @@ const Blogs = () => {
         </div>
 
             <div>
-                <Calculate names={courseName}></Calculate>
+                <Calculate names={courseName}
+                sum={totalSum}
+                remain={remaining}></Calculate>
             </div>
        
         
