@@ -7,8 +7,6 @@ const Course = ({name}) => {
         <div>
            
                 <li>{course_name}</li>
-
-               
            
         </div>
     );

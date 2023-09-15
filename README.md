@@ -1,8 +1,14 @@
-# React + Vite
+# Questions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+># Question-1: Add at least 3 Project features
 
-Currently, two official plugins are available:
+># Answer: 3 features in the project
+- First : We loaded courses JSON from fake-data and we showed them in the page.
+- Second : On click select course button, the course will be added in the  cart. Also it will  shows the course name of selected course.
+- Third: We can select course of total credit  hour 20 . We can't select course where credit hour is more them 20.And more than twenty will show a react toast.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ ># Question-2:Discuss how you managed the state in your assignment project.
+
+ ># Answer :
+ -We shared state among siblings by creating an event handler in the lowest common ancestor of the four siblings. We passed the state from the parent to the siblings using props and utilized a technique called state lifting. An event handler was established in the parent of the four siblings, allowing us to access and manage the shared state effectively in our application.
+

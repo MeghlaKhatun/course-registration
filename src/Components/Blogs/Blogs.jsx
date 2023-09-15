@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Blog from "../Blog/Blog";
 import Calculate from "../Calculate/Calculate";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Blogs = () => {
@@ -23,12 +24,13 @@ const Blogs = () => {
 
     const handleCourseName =(course)=>{
 
+        // total hour part
         const isAdd=courseName.find(item=>item.id == course.id);
         let count=course.credit;
-    
-      
+
         if(isAdd){
-           return alert ("already adding")
+       
+        return toast.error("Already added")
         }
         else{
             courseName.forEach(credit=>{
@@ -36,9 +38,13 @@ const Blogs = () => {
 
             })
 
+
+            // Credit hour remaining part
+
             const totalRemaining=20-count;
             if(count >20){
-                return alert("Dont show")
+
+               return toast.warning("The limit is over")
             }else{
 
                 setTotalSum(count);
@@ -60,6 +66,10 @@ const Blogs = () => {
             {
                 cards.map((card,idx)=><Blog key={idx} card={card} handleCourseName={handleCourseName} ></Blog>)
             }
+            <ToastContainer
+            position="top-center"
+            theme="light"
+            />
         </div>
 
             <div>
