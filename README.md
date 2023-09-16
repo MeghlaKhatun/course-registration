@@ -12,3 +12,5 @@
  ># Answer :
  -We shared state among siblings by creating an event handler in the lowest common ancestor of the four siblings. We passed the state from the parent to the siblings using props and utilized a technique called state lifting. An event handler was established in the parent of the four siblings, allowing us to access and manage the shared state effectively in our application.
 
+ 
+

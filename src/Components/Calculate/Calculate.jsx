@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Course from '../Course/Course';
 
-const Calculate = ({names,sum,remain}) => {
+const Calculate = ({names,sum,total,remain}) => {
   
 console.log(names)
     
@@ -25,6 +25,10 @@ console.log(names)
             </div>
             <h1 className='text-[16px] font-medium'>Total Credit Hour : {sum} </h1>
 
+            <div className=' border-b-2 my-4'>
+            </div>
+            <h1 className='text-[16px] font-medium'>Total Prices : {total} USD </h1>
+
             
         </div>
     );
@@ -34,6 +38,7 @@ Calculate.propTypes={
     names:PropTypes.array,
     sum:PropTypes.number,
     remain:PropTypes.number,
+    total:PropTypes.number,
 
 }
 

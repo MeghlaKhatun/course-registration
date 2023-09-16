@@ -12,6 +12,7 @@ const Blogs = () => {
     const [courseName,setCourseName]=useState([]);
     const [totalSum,setTotalSum]=useState(0);
     const [remaining,setRemaining]=useState(20);
+    const [totalPrice,setTotalPrice]=useState(0)
    
 
 
@@ -27,16 +28,19 @@ const Blogs = () => {
         // total hour part
         const isAdd=courseName.find(item=>item.id == course.id);
         let count=course.credit;
+        let price=course.price;
 
         if(isAdd){
        
         return toast.error("Already added")
         }
         else{
-            courseName.forEach(credit=>{
+            courseName.forEach((credit)=>{
                 count =count + credit.credit;
+                price=price + credit.price;
 
             })
+            
 
 
             // Credit hour remaining part
@@ -48,6 +52,8 @@ const Blogs = () => {
             }else{
 
                 setTotalSum(count);
+
+                setTotalPrice(price)
             
                 setRemaining(totalRemaining)
 
@@ -75,6 +81,7 @@ const Blogs = () => {
             <div>
                 <Calculate names={courseName}
                 sum={totalSum}
+                total={totalPrice}
                 remain={remaining}></Calculate>
             </div>
        
